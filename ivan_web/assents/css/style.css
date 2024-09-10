@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*
+mais um comando de comentario de código,
+somente para CSS.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #3eb86c; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background:linear-gradient(to right, #467a55,#3eb86c) */
+    /* background:linear-gradient(to right, red,#3eb86c); */
+    background-image: linear-gradient(#3eb86c, #467a55);
+}
+
+header {
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
