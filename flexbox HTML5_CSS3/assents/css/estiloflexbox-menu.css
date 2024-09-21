@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #330708;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* esse é meu conteiner */
+header {
+    background-color: #e84624;
+    padding: 7px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* esse é meu item */
+header>h1 {
+    color: whitesmoke;
+    /* flex: 0 0 100px; */
+
+}
+
+/* esse é meu item */
+nav {
+
+    background-color: #e84624;
+    padding: 7px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+
+nav>a {
+
+    color: #e8d826;
+    text-decoration: none;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 7px;
+    border: solid 2px #e8d826;
+    text-align: center;
+
+
+}
+
+nav>a:hover {
+    background-color: #e8d826;
+    color: #000000;
+    transition: .5s;
+}
+
+main {
+    background-color: #e87624;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 17px;
+    box-shadow: 2px 2px 4px #e8d826;
+}
+
+main>h2 {
+    color: whitesmoke;
+}
+
+footer {
+    color: whitesmoke;
+    padding: 7px;
+}
+
+
+/* p{
+    color: whitesmoke;
+} */

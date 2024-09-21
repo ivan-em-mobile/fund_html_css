@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e84624;
+    height: 105px;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: #330708;
+    height: 55px;
+    text-align: center;
+    padding: 17px;
+}
+
+footer {
+    background-color: #e8a726;
+    height: 45px;
+    text-align: center;
+    padding: 17px;
+}
+
+
+.conteiner {
+    /* somente usado no conteiner */
+
+    height: 300px;
+    background-color: #e8d826;
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.flex-item {
+    background-color: #e8a726;
+    text-align: justify;
+    padding: 7px;
+    border: solid 2px #333;
+    flex-basis: 200PX;
+}
+/* 
+grow controla quanto um item ocupa do espaço restante no contêiner.
+shrink controla o quanto um item encolhe quando não há espaço suficiente no contêiner.
+ */
+
+#imA {
+    flex-shrink: 1;
+    flex-grow: 3;
+}
+
+#imB {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#imC {
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}

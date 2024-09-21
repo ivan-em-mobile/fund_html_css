@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e85000;
+    height: 105px;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: #330708;
+    height: 55px;
+    text-align: center;
+    padding: 17px;
+}
+
+footer {
+    background-color: #e8a726;
+    height: 45px;
+    text-align: center;
+
+    padding: 17px;
+}
+
+
+.conteiner {
+    /* somente usado no conteiner */
+    /* 
+
+    */
+    height: 350px;
+    background-color: #e8d930;
+
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
+    /* align-content: space-around; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+
+.flex-item {
+    /*usando somente no item  */
+    /* 
+    elemento-filho: flex-item, todo item tem um elemento de ordem zero, dando assim a mudança de elemento
+    ele recebe as  propriedades do flex-item perante o conteiner pai. 
+    flex-basic: 
+        flex-shrink:1 flex-grow:1 pode aumentar e encolher.
+*/
+
+    /* flex: auto; */
+    background-color: #e8a330;
+    border: 2px solid #333;
+    text-align: center;
+    /* align-self: stretch; */
+    padding: 17px;
+    /* exemplo com lorem 1,2,3 na div item-flex */
+    flex-basis: auto;
+    /* flex-basis: 200px; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+    /* exemplo com lorem 1,2,3 na div item-flex */
+
+
+}
+
+a {
+    color: #f5f5f5;
+    text-decoration: none;
+}

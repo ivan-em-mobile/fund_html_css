@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e84624;
+    height: 105px;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: #330708;
+    height: 55px;
+    text-align: center;
+    padding: 17px;
+}
+
+footer {
+    background-color: #e8a726;
+    height: 45px;
+    text-align: center;
+
+    padding: 17px;
+}
+
+
+.conteiner {
+    /* somente usado no conteiner */
+    /* flex-conteiner pai, normal: row (linhas) 
+    para celulares usaremos  flex-direction: column (colunas)
+    eixo x: main-axis main-start e main-end;  eixo y: cross-axis cross-strat e cross-end;
+    flex-wrap (dobrar) e flex-grow (aumentar)
+    flex-flow (direction e wrap)
+    flex-direction: row;
+    flex-wrap: wrap;
+    vamos colocar dois atributos ao inves de um por cada
+
+    existe uma diferença entre space-around(espaços entre eles e depois deles); 
+    space-between(espaço entre eles somente); space-evenly(espaços somente entre itens deles).   
+    
+    align-items, alinhamento de altura, para alinhar um items deve ser usado align e justify center.
+
+    */
+    height: 300px;
+    background-color: #e8d826;
+    
+    /* sempre dando a diteção na nossa lingua portuguesa */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.flex-item {
+    background-color: #e8a726;
+    /* flex: auto; */
+    text-align: justify;
+    padding: 7px;
+
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
