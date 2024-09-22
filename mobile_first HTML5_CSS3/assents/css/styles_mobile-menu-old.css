@@ -69,13 +69,13 @@ header>h1 {
 }
 
 nav {
-    display: block;
+    display: inline-block;
     color: whitesmoke;
     text-align: center;
     list-style-type: none;
 }
 
-nav>ul>li {
+nav>ul {
     list-style-type: none;
 }
 
@@ -155,8 +155,6 @@ img#tv {
     display: none;
 }
 
-
-
 /* media para tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
@@ -218,7 +216,7 @@ img#tv {
 
 
 /* media para pc */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     body {
         background-image: url(/assents/back-pc.jpg);
     }
