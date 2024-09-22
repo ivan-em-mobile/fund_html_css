@@ -166,7 +166,7 @@ deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-bl
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
-        background-image: url(/assents/back-tablet.jpg);
+        background-image: url(assents/back-tablet.jpg);
 
     }
 
@@ -240,7 +240,7 @@ deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-bl
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     body {
-        background-image: url(/assents/back-pc.jpg);
+        background-image: url(assents/back-pc.jpg);
     }
 
     #burger {
@@ -306,7 +306,7 @@ deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-bl
 
 @media screen and (min-width: 1201px) {
     body {
-        background-image: url(/assents/back-tv.jpg);
+        background-image: url(assents/back-tv.jpg);
         background-repeat: repeat-x;
         background-attachment: fixed;
     }
