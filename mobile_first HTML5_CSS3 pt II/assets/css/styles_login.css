@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* criar a tela do mobile-first */
+
+body,
+html {
+    background-color: #e7bfa5;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    /*tudo que for fora da borda recorta */
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px #21203f;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+section#login>div#imagem {
+    display: block;
+    background: #4b3c5d url(/assets/gundan_main.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: 200px;
+}
+
+section#login>div#formulario {
+    display: block;
+    padding: 17px;
+}
+
+div#formulario>h1 {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+div#formlario>p {
+    font-size: 0.8em;
+}
+
+div.campo>label {
+    display: none;
+}
+
+div.campo>span {
+    color: white;
+    font-size: 2rem;
+    width: 40px;
+    padding: 3px;
+}
+
+div.campo>input {
+    background-color: #c9a3f8;
+    font-size: 1em;
+    padding: 3px;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 7px;
+    transform: translateY(-12px);
+}
+
+div.campo>input:focus-within {
+    background-color: white;
+}
+
+form>input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #21203f;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+form>div.campo {
+    background-color: #4b3c5d;
+    display: block;
+    border: solid 2px #4b3c5d;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin: 5px 0px;
+
+}
+
+form>input[type=submit]:hover {
+    background-color: #4b3c5d;
+
+}
+
+form>a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40%;
+    padding-top: 7px;
+    margin-top: 7px;
+    background-color: #c9a3f8;
+    color: black;
+    border: 1px solid #21203f;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+form>a.botao:hover {
+    background-color: #4b3c5d;
+    color: white;
+}
+
+form>a.botao>span {
+    font-size: 0.8em;
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #c89377, #21203f);
+    }
+
+    section#login {
+        width: 80vw;
+        height: 280px;
+    }
+
+    section#login>div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background: #4b3c5d url(/assets/gundan_main.png) no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+
+        /*  */
+    }
+
+    section#login>div#formulario {
+        float: right;
+        width: 70%;
+        /*  */
+    }
+}
+
+
+@media screen and (min-width: 993px) {
+    body {
+        background-image: linear-gradient(to top, #c89377, #21203f);
+    }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+        /*  */
+    }
+
+    section#login>div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+        background: #4b3c5d url(/assets/gundan_main.png) no-repeat;
+        background-size: cover;
+        background-position: right center;
+        /*  */
+    }
+
+    section#login>div#formulario {
+        float: left;
+        width: 50%;
+        /*  */
+    }
+
+    div#fomulario>h1 {
+        font-size: 2em;
+    }
+
+    div#formlario>p {
+        font-size: 1.2em;
+    }
+}
