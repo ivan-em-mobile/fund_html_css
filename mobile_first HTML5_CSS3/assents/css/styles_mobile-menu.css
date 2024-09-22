@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* Criando um mobile-first
+https://paletadecores.com/paleta/21203f/fff1ce/e7bfa5/c5a898/4b3c5d/
+https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+    device breakpoints
+     mobile 600 px 
+     tablet 768 px
+     desktop 992 px
+     smart_tv 1200 px
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* calcular a borda em relação ao tamanho.*/
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Definir o tamanho da tela sempre forçando o não extender a tela */
+html {
+    height: 100vh;
+}
+
+/* Definição  do tamanho da tela */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #21203f, #e7bfa5);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+
+}
+
+header {
+    background-color: #21203f;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+
+    text-align: center;
+    color: whitesmoke;
+    padding: 3px;
+    text-shadow: #c5a898 1px 1px 10px;
+    margin-top: 17px;
+
+}
+
+#burger {
+    background-color: #21203f;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+}
+
+#burger:hover{
+    background-color: #c5a898;
+}
+
+nav {
+    display: none;
+    color: whitesmoke;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    padding: 7px;
+    background-color: #21203f;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #e7bfa5;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+main {
+    background-color: #c5a898;
+    width: 90vw;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 7px;
+    padding: 3px;
+
+}
+
+article>h2 {
+    padding-bottom: 17px;
+}
+
+article>p {
+    text-align: justify;
+    margin-bottom: 17px;
+    text-indent: 17px;
+}
+
+footer {
+    background-color: #c5a898;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    width: 90vw;
+    padding: 7px;
+    margin: auto;
+}
+
+
+/* configuração e definição de imagens para mobile-first */
+img {
+    display: block;
+    margin: auto;
+}
+
+img#mobile {
+    display: block;
+}
+
+img#tablet {
+    display: none;
+}
+
+img#print {
+    display: none;
+}
+
+img#pc {
+    display: none;
+}
+
+img#tv {
+    display: none;
+}
+
+/* media para tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(/assents/back-tablet.jpg);
+    }
+
+    nav {
+        color: black;
+    }
+
+    nav>a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: gray;
+        text-decoration: none;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+
+/* media para pc */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(/assents/back-pc.jpg);
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/* media para smart_tv */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(/assents/back-tv.jpg);
+    }
+
+
+    img#mobile {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
