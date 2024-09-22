@@ -31,7 +31,7 @@ body {
     background-image: linear-gradient(to bottom, #21203f, #e7bfa5);
     background-repeat: no-repeat;
     background-position: top;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 }
 
@@ -68,32 +68,33 @@ header>h1 {
     background-color: #c5a898;
 }
 
-nav {
-    display: block;
+menu {
     color: whitesmoke;
     text-align: center;
     list-style-type: none;
-}
-
-nav>ul>li {
-    list-style-type: none;
-}
-
-a {
-    display: block;
-    padding: 7px;
-    background-color: #21203f;
     width: 90vw;
     margin: auto;
-    text-align: center;
-    border-radius: 0px 0px 0px 0px;
-    color: whitesmoke;
-    text-decoration: none;
-    cursor: pointer;
 }
 
-a:hover {
-    background-color: #e7bfa5;
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #21203f;
+    border-radius: 0px 0px 0px 0px;
+    color: whitesmoke;
+    margin: auto;
+
+
+}
+
+menu>ul>li>a:hover {
+    background-color: #c5a898;
     color: whitesmoke;
     text-decoration: none;
 }
@@ -111,12 +112,14 @@ main {
 
 article>h2 {
     padding-bottom: 17px;
+
 }
 
 article>p {
     text-align: justify;
     margin-bottom: 17px;
     text-indent: 17px;
+
 }
 
 footer {
@@ -161,18 +164,25 @@ img#tv {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: url(/assents/back-tablet.jpg);
+
     }
 
     #burger {
         display: none;
     }
 
-    nav {
+
+    menu {
         display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f;
     }
 
-    nav>ul>li {
+    menu>ul>li {
         display: inline-block;
+        background-color: #21203f;
+
     }
 
     main {
@@ -182,6 +192,8 @@ img#tv {
 
     article>h2 {
         padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
     }
 
     article>p {
@@ -227,12 +239,14 @@ img#tv {
         display: none;
     }
 
-    nav {
+    menu {
         display: block;
+        background-color: #21203f;
     }
 
-    nav>ul>li {
+    menu>ul>li {
         display: inline-block;
+        background-color: #21203f;
     }
 
     main {
@@ -280,18 +294,22 @@ img#tv {
 @media screen and (min-width: 1201px) {
     body {
         background-image: url(/assents/back-tv.jpg);
+        background-repeat: repeat-x;
+        background-attachment: fixed;
     }
 
     #burger {
         display: none;
     }
 
-    nav {
+    menu {
         display: block;
+        background-color: #21203f;
     }
 
-    nav>ul>li {
+    menu>ul>li {
         display: inline-block;
+        background-color: #21203f;
     }
 
     main {

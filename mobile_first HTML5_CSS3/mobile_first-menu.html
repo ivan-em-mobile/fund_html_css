@@ -18,7 +18,7 @@
     <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
         menu
     </span>
-    <nav id="itens">
+    <menu id="itens">
         <ul>
            <li><a href="#">mobile</a></li>
            <li><a href="#"> tablet</a></li>
@@ -27,7 +27,7 @@
         </ul>
 
 
-    </nav>
+    </menu>
 
     <main>
         <img src="/assents/icon-phone.png" alt="teste com celular" id="mobile">
@@ -89,7 +89,8 @@
         //monitorar o tamanho da tela
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
-                itens.style.display = 'inline-block'
+                //itens.style.display = 'inline-block'
+                itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
             }
