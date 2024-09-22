@@ -44,7 +44,6 @@ header {
 }
 
 header>h1 {
-
     text-align: center;
     color: whitesmoke;
     padding: 3px;
@@ -89,7 +88,6 @@ menu>ul>li>a {
     border-radius: 0px 0px 0px 0px;
     color: whitesmoke;
     margin: auto;
-
 
 }
 
@@ -160,7 +158,12 @@ img#tv {
 
 
 
-/* media para tablet */
+/* media para tablet com  largura de tela menor que 768px para o maior de 992px
+onde sera modificado as medidas do menu, menu lista, main > article onde o menu
+deve estar bloqueado seguindo as margens e cor de fundo dos elementos e 
+deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-block
+(na horizontal) e sua exibição de imagens */
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: url(/assents/back-tablet.jpg);
@@ -229,7 +232,12 @@ img#tv {
 }
 
 
-/* media para pc */
+/* media para pc com  largura de tela menor que 992px para o maior de 1200px
+onde sera modificado as medidas do menu, menu lista, main > article onde o menu
+deve estar bloqueado seguindo as margens e cor de fundo dos elementos e 
+deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-block
+(na horizontal) e sua exibição de imagens */
+
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     body {
         background-image: url(/assents/back-pc.jpg);
@@ -290,7 +298,12 @@ img#tv {
     }
 }
 
-/* media para smart_tv */
+/* media para smart_tv com  largura de tela menor que 992px para o maior de 1200px
+onde sera modificado as medidas do menu, menu lista, main > article onde o menu
+deve estar bloqueado seguindo as margens e cor de fundo dos elementos e 
+deixando assim o menu burger oculto, forçando assim o menu aparecendo inline-block
+(na horizontal) e sua exibição de imagens */
+
 @media screen and (min-width: 1201px) {
     body {
         background-image: url(/assents/back-tv.jpg);
