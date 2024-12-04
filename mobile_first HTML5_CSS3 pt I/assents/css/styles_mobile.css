@@ -44,7 +44,32 @@ header {
 nav {
     color: whitesmoke;
     text-align: center;
+    list-style-type: none;
+    width: 90vw;
+    margin: auto;
 }
+
+nav>ul {
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #21203f;
+    border-radius: 0px 0px 0px 0px;
+    color: whitesmoke;
+    margin: auto;
+}
+
+nav>ul>li>a:hover {
+    background-color: #c5a898;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 
 main {
     background-color: #c5a898;
@@ -74,16 +99,16 @@ header>h1 {
 
 }
 
-nav>a {
+/* nav>a {
     color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
-a:hover {
+/* a:hover {
     color: whitesmoke;
     text-decoration: none;
-}
+} */
 
 
 
